@@ -1,12 +1,19 @@
 .main {
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.projects {
+.my-projects {
 
 }
 
 .screenshot {
+
+}
+
+.project {
 
 }
 
@@ -20,20 +27,4 @@ project-2 {
 
 .project-3 {
 
-}
-
-.photos {
-
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 100%;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
 }
