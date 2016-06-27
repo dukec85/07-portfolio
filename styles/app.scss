@@ -6,3 +6,14 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'font-awesome';
 @import 'box-sizing';
 @import 'variables';
+@import 'top-nav';
+//@import 'cssgram';
+@import 'main';
+@import 'footer';
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  max-width: 100vw;
+  min-height: 100vw;
+}

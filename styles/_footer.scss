@@ -1,0 +1,14 @@
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: $brand-black;
+}
+
+.icons {
+  margin: 2% 3%;
+}
+
+.icon-white {
+  color: $brand-white;
+}

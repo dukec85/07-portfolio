@@ -1,0 +1,50 @@
+.top-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 3% 25% 0%;
+  background: $brand-black;
+  color: $brand-white;
+  font-size: 75%;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.name {
+  margin-right: auto;
+}
+
+.skillz {
+  margin-right: auto;
+  color: $brand-white;
+  text-decoration: none;
+}
+
+.city {
+  color: $brand-white;
+  text-decoration: none;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  background: $brand-blue;
+}
+
+.student {
+
+}
+
+.details {
+  color: $brand-white;
+}
