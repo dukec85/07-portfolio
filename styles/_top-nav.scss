@@ -9,30 +9,43 @@
 .links {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  padding: 3% 25% 0%;
+  padding: 0 25%;
   background: $brand-black;
   color: $brand-white;
-  font-size: 75%;
+  font-size: 85%;
 }
 
 .logo {
-  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  height: 5rem;
+  padding-top: 1%;
 }
 
 .name {
-  margin-right: auto;
+  display: flex;
+  position: relative;
+  align-items: center;
 }
 
 .skillz {
+  display: flex;
+  position: relative;
+  align-items: center;
   margin-right: auto;
   color: $brand-white;
   text-decoration: none;
+  //padding-left: 20%;
 }
 
 .city {
+  display: flex;
+  position: relative;
+  align-items: center;
   color: $brand-white;
   text-decoration: none;
+  //padding-left: 20%;
 }
 
 .intro {

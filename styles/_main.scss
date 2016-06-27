@@ -9,8 +9,8 @@
   justify-content: center;
 }
 
-.screenshot {
-  width: 35%;
+.project-title__html {
+  margin-left: 15%;
 }
 
 .projects {
@@ -22,21 +22,54 @@
 .html {
   display: flex;
   flex-direction: row;
+  margin-right: 15%;
+  margin-left: 15%;
 }
 
 .project-1 {
-  display: inline-block;;
-  margin-top: 15%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
 }
 
-project-2 {
-  display: inline-block;
+.image-parent {
+  width: 115%;
+}
+
+.screenshot {
+  width: 100%;
+  // @extend: %inkwell;
+}
+
+.mockup {
+  display: flex;
+  flex-direction: row;
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+.project-2 {
+  display: flex;
+  flex-direction: column;
   margin-top: 5%;
+}
+
+.shirt {
+  display: flex;
+  flex-direction: row;
+  margin-right: 15%;
+  margin-left: 15%;
 }
 
 .project-3 {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.image-parent__tshirts {
+  width: 170%;
 }
 
 @media screen and (min-width: 500px) and (max-width: 980px) {
