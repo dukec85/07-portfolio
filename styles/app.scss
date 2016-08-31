@@ -1,20 +1,210 @@
 // @import 'yoga';
 // @import 'normalize';
 
-$fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
+$light-border: #ebebeb;
+$gutter: 1rem;
 
+$fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'font-awesome';
 @import 'box-sizing';
-@import 'variables';
-@import 'top-nav';
-@import 'cssgram';
-@import 'main';
-@import 'footer';
+@import 'reset';
 @import 'city';
 
 body {
+  background: #fff;
+  font-family: 'Oxygen', serif;
+  font-weight: 400;
+}
+
+.top-container {
+  padding: 0 $gutter;
+  max-width: 35em;
+  margin: 0 auto;
+}
+.master-container {
+  padding: 0 $gutter;
+  max-width: 60em;
+  margin: 0 auto;
+}
+
+.nav-top {
+  width: 100%;
+  padding: 0 $gutter;
   margin: 0;
-  font-family: sans-serif;
-  max-width: 100vw;
-  min-height: 100vw;
+  background: #161616;
+  color: #fff;
+  z-index: 1;
+  box-shadow: 0rem 0.3rem 0.5rem #c8c8c8;
+  font-family: 'Karla' , sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.nav-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+  margin: 0;
+
+  &__item {
+    width: 20%;
+    padding: 0.5rem 0 0.5rem 0;
+  }
+
+  &__logo {
+    width: 55%;
+  }
+}
+
+.top-banner {
+  margin: auto;
+  padding: 5rem $gutter;
+  background: url('img/scribble.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  z-index: 0;
+  border-bottom: 0.1rem solid $light-border;
+  border-top: 0.1rem solid darken($light-border, 60%);
+  font-family: 'Karla' , sans-serif;
+  color: #292828;
+  text-shadow: 0rem 0.15rem 0.4rem #fff;
+}
+
+hr.banner__line {
+  border: 0;
+  width: 15%;
+  height: 0.2rem;
+  background: #fff;
+  margin: $gutter auto;
+
+}
+
+.projects-header {
+  text-align: center;
+  padding: 0.8rem 0 2rem 0;
+    h3{
+    font-family: 'Oxygen' , sans-serif;
+    color: darken($light-border, 80%);
+    text-shadow: 0.05rem 0.1rem 0.3rem darken($light-border, 30%);
+    font-size: 18pt;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5rem $gutter;
+
+  &--info {
+    width: 50%;
+  }
+
+  &--image {
+    width: 50%;
+    text-align: right;
+    padding: 0 0 0 0.8rem;
+
+    img{
+      width: 100%;
+      border: 0.01rem solid $light-border;
+      // box-shadow: 0rem 0.1rem 0.3rem #c8c8c8;
+    }
+  }
+
+}
+.row--middle {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  padding: 0.5rem $gutter;
+
+  &__info {
+    width: 50%;
+    flex-grow: 1;
+  }
+
+  &__image {
+    width: 50%;
+    text-align: left;
+    padding: 0 0.8rem 0 0;
+
+    img {
+      width: 100%;
+      // box-shadow: 0rem 0.1rem 0.3rem #c8c8c8;
+      border: 0.01rem solid $light-border;
+    }
+  }
+
+}
+
+.footer-container {
+  width: 100%;
+  padding: 0 $gutter;
+  margin-top: 3rem;
+  background: #161616;
+  color: #fff;
+}
+
+.footer-content {
+  display: flex;
+  text-align: center;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+  margin: 0 auto;
+  font-size: 20pt;
+
+  &__item {
+    width: 20%;
+    padding: 0.5rem 0 0.5rem 0;
+  }
+
+  &__logo {
+    width: 45%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen
+and (min-width: 320px)
+and (max-width: 650px) {
+  body {
+    // background: blue;
+  }
+
+  .top-banner {
+    padding: 2.5rem $gutter;
+  }
+
+  .row {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    &--info {
+      width: 100%;
+      padding: 0.5rem;
+    }
+    &--image {
+      width: 100%;
+      padding: 0.5rem;
+    }
+  }
+
+  .row--middle {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    &__info {
+      width: 100%;
+      padding: 0.5rem;
+    }
+    &__image {
+      width: 100%;
+      padding: 0.5rem;
+    }
+  }
+
 }

@@ -2,86 +2,89 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>07-portfolio</title>
+  <title>My City</title>
   <link rel="stylesheet" href="/app.css">
+  <link href="https://fonts.googleapis.com/css?family=Arimo|Cabin:700|Oxygen:400,700|Karla" rel="stylesheet">
 </head>
+
 <body>
-  <nav class="top-nav">
-    <div class="links">
-      <img class="logo" src="img/logo.svg">
-      <p class="name">Chris Duke</p>
+<nav class="nav-top">
+  <div class="top-container">
+  <ul class="nav-group">
+    <li class="nav-group__item"><img class="nav-group__logo" src="img/logo.svg" alt=""></li>
+    <li class="nav-group__item">Chris Duke</li>
+    <li class="nav-group__item"><a href="/">My Skillz</a></li>
+    <li class="nav-group__item"><a href="/city.html">My City</a></li>
+  </ul>
+</div>
+</nav>
+<div class="top-banner">
+  <h1>Student at the Iron Yard</h1>
+  <p class="details">As a student, I'm working to learn the skills I need to create new things</p>
 
-      <a href="/" class="skillz">My Skillz</a>
-      <a href="/city.html" class="city">My City</a>
-    </div>
-    <div class="intro">
-      <h1 class="student">Student at the Iron Yard</h1>
-      <p class="details">As a student, I'm working to learn the skills I need to create new things</p>
-    </div>
-  </nav>
+  <hr class="banner__line">
+  <h2>Nashville's Alright</h2>
+</div>
 
-  <div class="main">
-    <h3 class="my">My Projects</h3>
-    <div class="projects">
+<div class="projects-header">
+  <h3>Projects</h3>
+</div>
 
-        <div class="project-1">
+<main>
+  <div class="master-container">
 
-        <h3 class="project-title__html">HTML Introduction</h3>
-        <div class="html">
+    <div class="row">
+
+      <div class="row--info">
         <p>This project gave me a good introduction to HTML by letting me write the code
         based on pre-written CSS. It's a simple page but it allowed me to get a better sense of how
         the content and styling interact with each other.</p>
-        <div class="image-parent">
-        <img class="screenshot" src="img/html.png" alt="">
-        </div>
-        </div>
       </div>
-
-    <div class="mockup">
-
-
-
-        <div class="image-parent__ties">
-        <img class="screenshot" src="img/mockup.png" alt="">
-        </div>
-      <div class="project-2">
-        <h3 class="project-title">Site Mockup</h3>
-
-        <p>This project was much more complex than the first one. It involved numerous images, linking to external fonts, creating borders and boxes,
-        arranging images and boxes using flex in CSS, and much more detail than anything I had attempted previously.</p>
-
+      <div class="row--image">
+        <img class="screenshot" src="img/html.png" alt="">
       </div>
     </div>
 
-    <div class="shirt">
-
-      <div class="project-3">
-
-        <h3 class="project-title">T-Shirt Site</h3>
-
-        <p>Creating this site was frustrating but rewarding. It was my first experience with using hover for
-           color transformation, dropdown lists, and font-size increases. Furthermore, this was my first experience
-           using media queries to change the layout of the site based on the size of the browser or viewport.
-        </p>
-        </div>
-
-        <div class="image-parent__tshirts">
+      <div class="row--middle">
+      <div class="row--middle__info">
+        <p>This project was much more complex than the first one.</p>
+        <p>It involved numerous images, linking to external fonts, creating borders and boxes,<br>
+        </br>arranging images and boxes using flex in CSS, and much more detail than anything I had attempted previously.</p>
+      </div>
+      <div class="row--middle__image">
+        <img class="screenshot" src="img/mockup.png" alt="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="row--info">
+        <p>Creating this site was frustrating but rewarding.</p>
+        <p>It was my first experience with using hover for color transformation, dropdown lists, and font-size increases.</p>
+        <p>Furthermore, this was my first experience using media queries to change the layout of the site based on the size of the browser or viewport.</p>
+      </div>
+      <div class="row--image">
         <img class="screenshot" src="img/tshirts.png" alt="">
-        </div>
+      </div>
+    </div>
 
+      </div>
     </div>
   </div>
-</div>
+</main>
 
-  <footer class="footer">
-    <div class="social">
-        <a class="icons icon-white" href="https://twitter.com/ChrisDanDuke"> <i class="fa fa-twitter" aria-hidden="true"></i></a>
-        <a class="icons icon-white" href="https://www.facebook.com/dukec"> <i class="fa fa-facebook" aria-hidden="true"></i></a>
-        <div class="icons"> <img class="logo" src="/logo.svg"> </div>
-        <a class="icons icon-white" href="https://github.com/dukec85"> <i class="fa fa-github" aria-hidden="true"></i></a>
-        <a class="icons icon-white" href="https://www.linkedin.com/in/chris-duke-91504346"> <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+<footer>
+
+  <div class="footer-container">
+    <div class="top-container">
+      <ul class="footer-content">
+        <li class="footer-content__item"><a href="https://twitter.com/ChrisDanDuke"><span class="fa fa-twitter"></a></span></li>
+        <li class="footer-content__item"><a href="https://www.facebook.com/dukec"><span class="fa fa-facebook"></a></span></li>
+        <li class="footer-content__item"><img class="footer-content__logo" src="img/consonancelogo.svg" alt=""></li>
+        <li class="footer-content__item"><a href="https://github.com/dukec85"><span class="fa fa-github"></a></span></li>
+        <li class="footer-content__item"><a href="https://www.linkedin.com/in/chris-duke-91504346"><span class="fa fa-linkedin"></a></span></li>
+      </ul>
     </div>
-  </footer>
+  </div>
+</footer>
 
 </body>
 </html>
