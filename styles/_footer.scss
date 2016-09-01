@@ -1,0 +1,22 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  background: $brand-black;
+}
+
+.icons {
+  margin: 2% 3%;
+}
+
+.icon-white {
+  color: $brand-white;
+}
